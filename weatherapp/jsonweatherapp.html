@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="weathercss.css">
+
+</head>
+
+<body>
+    <div class="container-fluid bg-light text-center">
+        <h1>Find Weather</h1>
+        <h6>select your city...</h6>
+        <select id="dropdownvalue" onchange="my()">
+            <option selected disabled>Select your city</option>
+            <option>Hyderabad</option>
+            <option>delhi</option>
+            <option>maharashtra</option>
+            <option>mumbai</option>
+            <option>chennai</option>
+            <option>kerala</option>
+            <option>goa</option>
+        </select>
+        <h2 id="temp"></h2>
+        <h2 id="weather"></h2>
+        <img id="myimg" src="image1.jpg">
+    </div> 
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+    <script src="weatherjs.js"></script>
+</body>
+</html>
